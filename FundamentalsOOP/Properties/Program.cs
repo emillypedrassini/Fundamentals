@@ -1,0 +1,24 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Properties
+{
+	class Program
+	{
+		static void Main(string[] args)
+		{
+
+			var customer = new Customer();
+			customer.Name = "Maria";
+			Console.WriteLine(customer.Name);
+
+			var person = new Person(new DateTime(1991, 8, 9));
+			Console.WriteLine(person.Age);
+
+			Console.ReadKey();
+		}
+	}
+}
